@@ -1599,7 +1599,7 @@ void KFileReplacePart::loadRulesFile(const QString& fileName)
 
   KeyValueMap docMap;
 
-  if(searchAttribute.isNull())
+  if(searchAttribute.isNull() || searchAttribute.isEmpty())
     {
       int answer = KMessageBox::warningYesNo(m_w, i18n("<qt>The format of kfr files has been changed; attempting to load <b>%1</b>. Please see the KFilereplace manual for details. Do you want to load a search-and-replace list of strings?</qt>", fileName),i18n("Warning"),KGuiItem(i18n("Load")),KGuiItem(i18n("Do Not Load")));
 
