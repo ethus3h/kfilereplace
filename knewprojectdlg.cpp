@@ -106,10 +106,7 @@ void KNewProjectDlg::slotOK()
    m_option->m_filters = m_cbFilter->currentText();
    if(!m_leSearch->text().isEmpty())
      {
-       if(m_leReplace->text().isEmpty())
-         m_option->m_searchingOnlyMode = true;
-       else
-         m_option->m_searchingOnlyMode = false;
+       m_option->m_searchingOnlyMode = false;
      }
    m_option->m_quickSearchString = m_searchNowFlag + m_leSearch->text();
    m_option->m_quickReplaceString = m_searchNowFlag + m_leReplace->text();
