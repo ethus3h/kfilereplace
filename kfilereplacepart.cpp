@@ -686,6 +686,7 @@ void KFileReplacePart::initGUI()
     actionCollection()->addAction("report_bug", action );
   connect(action, SIGNAL(triggered(bool) ), SLOT(reportBug()));
 
+  m_option->m_simulation = false;
 }
 
 void KFileReplacePart::initView()
