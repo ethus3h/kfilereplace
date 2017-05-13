@@ -349,7 +349,6 @@ void KFileReplaceView::slotQuickStringsAdd(const QString& quickSearch, const QSt
     if(quickReplace.isEmpty())
     {
       map[quickSearch] = QString::null;	//krazy:exclude=nullstrassign for old broken gcc
-      m_option->m_searchingOnlyMode = true;
     }
     else
     {
